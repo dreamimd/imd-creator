@@ -1,0 +1,11 @@
+{
+  "name": "@dreamimd/website",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite"
+  },
+  "dependencies": {
+    "@dreamimd/imd-creator": "workspace:^"
+  }
+}

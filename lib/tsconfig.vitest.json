@@ -1,0 +1,17 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "lib": [
+      "ESNext",
+      // 等待 vue IDE 插件修复 .vue 文件解析 Project reference 顺序错误的问题后，就可以删去 DOM 和 DOM.Iterable 了
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "types": ["node", "vitest/globals"]
+  },
+  "include": [
+    "src",
+    "__tests__"
+  ]
+}
